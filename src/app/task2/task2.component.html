@@ -1,0 +1,13 @@
+<h3>Hello Sudarshan,I am Compo of the Task2</h3>
+<br><br>
+
+Enter a Course : <input type="text" [(ngModel)]="coursename">
+<br><br>
+<button (click)="addcourse()">Add Course</button>
+
+<ul>
+
+    <li *ngFor="let course of courseList" [style.backgroundColor]="course.colorname" (click)="checkitem(course)">{{course.coursename}}</li>
+
+</ul>
+
