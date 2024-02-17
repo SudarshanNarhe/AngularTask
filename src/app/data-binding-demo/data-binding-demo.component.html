@@ -1,0 +1,48 @@
+<p>data-binding-demo works!</p>
+
+<h3>{{name}}</h3>
+
+<ul>
+    <li *ngFor="let c of course">
+        {{c}}
+    </li>
+</ul>
+
+<img [src]="path" alt="image">
+<br>
+<button (click)="show()" [disabled]="flag">Show</button>
+<br><br>
+<input type="text" value="10" [disabled]="flag">
+
+<br>
+<button (click)="show()" disabled="{{flag}}">Show</button>
+
+<table>
+    <tr>
+        <th [attr.colspan]="columnspan">DP 8-9</th>
+    </tr>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+    </tr>
+    <tr>
+        <td>11</td>
+        <td>Suraj</td>
+    </tr>
+    <tr>
+        <td>12</td>
+        <td>Yogi</td>
+    </tr>
+    <tr>
+        <td>13</td>
+        <td>Adi</td>
+    </tr>
+</table>
+
+<br><br>
+
+<p [style.color]="color">I Love Angular</p>
+
+<br><br>
+
+<p [ngStyle]="myStyle">Angular is easy and simple</p>
